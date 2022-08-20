@@ -1,0 +1,60 @@
+@import "./mixin.scss";
+
+.navbar{
+	color: rgba(255, 255, 255, 0.774);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	backdrop-filter: blur(10px);
+	
+	display: flex;
+	justify-content: center;
+li{
+    padding: 0 0.1rem;
+	a{
+		color: white !important;
+	}
+}
+.navbar-brand{
+	color: whitesmoke;
+	margin-left: 40px;
+	
+}
+}
+.navbar-toggler{       
+	border: none;
+}
+
+
+.navul{
+position: absolute;
+right:  40%;
+
+}
+.btn-outline-success{
+	border: 1px solid rgba(255, 255, 255, 0.774);
+	color: rgba(255, 255, 255, 0.774);
+
+&:hover{
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.774);
+}
+}
+
+@include tab {
+	.navul{
+		position:relative;
+		right: inherit;
+		}
+		
+		.navbar-brand{
+			margin-left: 0px !important;
+		}	
+}
+@include des{
+	.navbar-brand{
+		margin-left: 0px !important;
+	}
+}
+
+

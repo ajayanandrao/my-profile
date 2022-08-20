@@ -1,0 +1,231 @@
+
+@import './mixin.scss';
+
+@mixin desk {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @mixin desk2 {
+      @media(max-width: 1100px){
+          @content;
+      }
+  }
+@mixin tab {
+    @media (max-width: 990px) {
+      @content;
+    }
+  }
+  @mixin  mobile-sm {
+    //   414px
+    @media (max-width: 360px) { 
+      @content;
+    }
+    
+  }
+  @mixin  mobile {
+    //   414px
+    @media (max-width: 500px) { 
+      @content;
+    }
+    
+  }
+
+
+  .Section-2-img{
+    width: 100%;
+    background: url("../img/opera-browser-neon-wallpaper-preview.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.btn-ui-1{
+    display: none;
+}
+
+.btn-glass{
+    color: rgba(255, 255, 255, 0.774);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
+    border-top: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	backdrop-filter: blur(20px);
+    &:hover{
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        backdrop-filter: blur(20px);
+    }
+}
+
+
+
+.Section-2-Card-Left{
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    color: rgba(255, 255, 255, 0.774);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
+    border-top: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .h1mobile{
+        width: 100px; 
+        color: white;
+    }
+
+    .Section-2-Card-Chailed{
+        background:linear-gradient(to bottom right, #077BD8, #BC559E);
+        height: 270px;
+        width: 370px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+#mobimg{
+    width: 300px;
+}
+
+.about-card-home2{
+    margin-left: 30px;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: red;
+
+    .slideUp {
+        animation-name: slideUp;
+        -webkit-animation-name: slideUp;
+        animation-duration: 20s;
+        -webkit-animation-duration: 1.4s;
+        visibility: visible;
+        }
+        
+        @keyframes slideUp {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(50%);
+        } 
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+        }
+        }
+    
+    .div{
+        width:100%;
+        visibility:hidden;
+    }
+}
+
+@include des{
+    .about-card-home2{
+     margin-top: 0px;
+        // background: green;
+    }
+}
+
+@include tab{
+    .display{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-card-home2{
+        margin:50px 0px;
+        margin-top: 100px;
+    }
+    
+}
+
+@include mobile{
+    .about-card-home2{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .Section-2-Card-Left{
+        border-radius: 10px;
+        width: 300px;
+        height: 220px;
+          
+        .h1mobile{
+            width: 100px; 
+            color: white;
+        }
+    
+        .Section-2-Card-Chailed{
+            width: 280px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn-ui{
+            display: none;
+        }        
+    }
+    .btn-ui-1{
+        display:block !important;
+    }
+    #mobimg{
+        width: 200px !important;
+     
+    }
+
+
+}
+
+@include mobile-sm{
+    .Section-2-Card-Left{
+        border-radius: 10px;
+        width: 300px;
+        height: 220px;
+          
+        .h1mobile{
+            width: 100px; 
+            color: white;
+        }
+    
+        .Section-2-Card-Chailed{
+            width: 280px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn-ui{
+            display: none;
+        }        
+    }
+    .btn-ui-1{
+        display:block !important;
+    }
+    #mobimg{
+        width: 200px !important;
+     
+    }
+
+
+}
+

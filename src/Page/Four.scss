@@ -1,0 +1,27 @@
+.page-four{
+    min-height: 100vh;
+    background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
+    color:white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  
+
+.page-four-span{
+    display: block;
+    padding-top: 30px;
+    .span-display-block{
+        display: block;
+        text-align: center;
+    }
+}
+
+.div-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
