@@ -1,0 +1,46 @@
+@import './mixin.scss';
+
+// .div-center{
+//     background: blue;
+//     margin-bottom: 50px;
+// }
+.sl{
+    height: 50px;
+    width: 100%;
+}
+.form-center-up{
+    display: flex;
+    justify-content: center;
+    // background: red;
+    margin: 0 auto;
+    .w-150{
+        width: 300px;
+    }
+    form{
+    padding: 10px;
+    }
+}
+.sotioal-icon-row{
+    width: 300px;
+    display: flex;
+    // background: rebeccapurple;
+}
+
+.sotioal-icon{  
+    margin-top: 20px;
+.fa-brands{
+    cursor: pointer;
+    display: flex;
+    // background: red;
+    margin: 0 0px;
+    color: rgba(255, 255, 255, 0.637);
+    font-size:30px;
+    &:hover {
+        color: whitesmoke;
+    }
+}
+.fa-brand-mg{
+    display: flex;
+    margin: 0 20px;
+}
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './About.scss';
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -91,8 +92,11 @@ const About = () => {
                         <div  id="includedContent"></div>
                     </span>
                           Frontend developer, I create web pages with UI / UX user interface, ihave years of experience and many clients are happy with the projects carried out. <p> </p>  
-                          <a href="./resume ajay.pdf" download=""><button  className="btn btn-glass" >Download CV</button></a> 
-                          <a href="./Contact.html"><button className="btn btn-glass m-2" >Contact me</button></a>
+                          <a href="./su2.png" download="">
+                            {/* <Link to="./resume ajay.pdf"> */}
+                            <button  className="btn btn-glass" >Download CV</button>
+                            </a>
+                          <Link to="/contact/"> <button className="btn btn-glass m-2" >Contact me</button></Link>
                           
                     </div>
                 </div>    
