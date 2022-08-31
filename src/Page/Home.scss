@@ -4,6 +4,48 @@
 
 ////////////////////////scroll bar End /////////////////////////////////
 
+.animattion-div{
+
+  animation-name: animattion-div;
+  -webkit-animation-name: animattion-div;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 1.5s;
+  visibility: visible;
+} 
+@keyframes animattion-div {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+// scroll animation start ====================>
+.div {width:100%;visibility:hidden;}
+.slideUp {
+  animation-name: slideUp;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+// End =======================================>
+
+// ///////////////////////////////////////////////////////////////////
 .page-one{
 
   background: url("../img/Go2ein.jpg");

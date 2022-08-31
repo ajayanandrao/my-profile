@@ -7,13 +7,22 @@ import Four from './Four';
 import Footer from './Footer';
 
 const Home = () => {
+
+
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+    if (document.documentElement.scrollTop > 350) {
+      document.getElementById("myImg").className = "slideUp";
+    }
+  }
+  
   return (
     <>
     
     <div className="page-one" id="one">
       <Navbar />
   
-        <div className="out d">
+        <div className="out animattion-div">
           <div className="h">
             <div className="text">
               hello, I'm
