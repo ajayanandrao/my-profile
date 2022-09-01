@@ -1,6 +1,5 @@
 
 @import "./mixin.scss";
-// @import "../img/aj.jpg";
 
 ////////////////////////scroll bar End /////////////////////////////////
 
@@ -47,12 +46,11 @@
 
 // ///////////////////////////////////////////////////////////////////
 .page-one{
-
   background: url("../img/Go2ein.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 } 
 
 .Circle-outer-one{
@@ -84,7 +82,7 @@
   width: 250px;
   border-radius: 5px;
   height: inherit;
-  /* background: red; */
+  // background: red;
   border-radius: 50%;
 }
 
@@ -98,20 +96,6 @@
   overflow: hidden;
 }
 
-
-
-
-.Circle-two{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    // background:linear-gradient(to left, #BC559E,#83C1E3);
-    background-image: url("../img/aj.jpg");
-    background-position: center, top;
-    background-size: cover;
-    border-left: 1px solid #BC559E;
-    border-right: 1px solid #83C1E3;
-}
 .Circle-one{
     height: 300px;
     width: 300px;
@@ -121,12 +105,9 @@
     align-items: center;
     padding: 20px;
     color: rgba(255, 255, 255, 0.774);
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
-	border-bottom: 1px solid rgba(255,255,255,0.3);
-    border-top: 1px solid rgba(255,255,255,0.3);
-	border-left: 1px solid rgba(255,255,255,0.3);
-    border-right: 1px solid rgba(255,255,255,0.3);
+  	background: rgba(255, 255, 255, 0.1);
+	  box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
+  	border: 1px solid rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
 
 }
@@ -141,22 +122,19 @@
 .text{
     text-align: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     // background: blue;
     color: white;
-
-.down-arro{
-  position: relative;
-  bottom: 30px;
-  // background: red;
-  height: 40px;
-  width: 35px;
-  overflow: hidden;
-}
-
   }
 }
 
+.circle-div-center{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
 
 .out{
     width: 100%;
@@ -164,15 +142,137 @@
     justify-content: center;
     align-items: center;
     // background: yellow;
+    .mouse-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      // background: red;
+      padding: 25px;
+    }
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Mouse >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+.mouse {
+  width: 37px;
+  height: 60px;
+  color: rgba(255, 255, 255, 0.774);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.774);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+   .dot {
+    width: 7px;
+    height: 7px;
+    background:white ;
+    border-radius: 100%;
+    position: relative;
+    animation: mymove 2s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+  }
+
+  @keyframes mymove {
+    from {
+      top: 0px;
+      opacity: 0;
+    }
+
+    to {
+      top: 70%;
+      opacity: 5;
+    }
+  }
+&:hover{
+  background: rgba(255, 255, 255, 0.267);
+  border: 1px solid white;
+  backdrop-filter: blur(15px);
+ 
+}
 }
 
 
-.d{
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Media Queries >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+@include des {
+  
+  .Circle-one{
+    // display: none;
+  }
+  
+  .h{
+ 
+.text{
+    text-align: center;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    // background: blue;
+    color: white;
+  }
+}
 
-    animation-name: d;
-    -webkit-animation-name: d;
-    animation-duration: 0.1s;
-    -webkit-animation-duration: 1.5s;
-    visibility: visible;
+.mouse-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background: red;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+}
+
+
+@include mobile{
+
+  .mouse-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // background: red;
+    margin-top: 0px;
+  }
+  .h{
+    // background: red ;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+
+.text{
+    text-align: center;
+    width: 100%;
+    margin: 40px 0px;
+    background: none;
+    color: white;
+  }
+}
+
+  .Circle-outer-card-one{
+    width: 230px;
+    height: 230px;
+  }
+  
+  .Circle-outer-card-two{
+    width: 230px;
+    border-radius: 100%;
+  }
+  
+  .Circle-outer-card-two-img{
+    background-image: url("../img/aj.jpg");
+    width: 230px;
+    height: 230px;
   }
 
+  .Circle-one{
+      height: 270px;
+      width: 270px;
+      padding: 20px;
+  }
+
+}

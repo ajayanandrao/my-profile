@@ -8,7 +8,7 @@ const Three = () => {
 
 <span className="page-two-span">
     <span className="span-display-block">
-        <h2>Get Started</h2>
+        <h2 className='get-start-3'>Get Started</h2>
     </span>
 </span>
 <div className="page-three-section1">

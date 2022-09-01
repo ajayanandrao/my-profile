@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import './Signin.scss';
+import fb from '../img/icons/fb-sm.png';
 
 const Signin = () => {
     return (
@@ -11,7 +12,7 @@ const Signin = () => {
                 <Navbar />
                 <span className="page-four-span">
                     <span className="span-display-block">
-                        <h2>Sign in</h2>
+                        <h2 className='sign-in-margin'>Sign in</h2>
                     </span>
                     <div className="container form-center">
                         <form>
@@ -38,6 +39,7 @@ const Signin = () => {
                     <div className="sotioal-icon">
                         <span className="sotioal-icon-row">
                             Login with :
+
                             <div className="fa-brand-mg">
                                 <a href="https://www.facebook.com"><i className="fa-brands fa-facebook"></i></a>
                             </div>
@@ -57,5 +59,5 @@ const Signin = () => {
         </>
     )
 }
-
+{/* <i className="fa-brands fa-facebook"></i> */}
 export default Signin
