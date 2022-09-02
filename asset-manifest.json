@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.22cb33ad.css",
-    "main.js": "/my-profile/static/js/main.2a00caf9.js",
+    "main.css": "/my-profile/static/css/main.2d9ad600.css",
+    "main.js": "/my-profile/static/js/main.c40ae5f0.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-profile/static/js/787.28cb0dcd.chunk.js",
     "static/media/su.png": "/my-profile/static/media/su.1c4d0c45ad1da4c60048.png",
+    "static/media/cv.pdf": "/my-profile/static/media/cv.81738980b0768fde2b3f.pdf",
     "static/media/ab.jpg": "/my-profile/static/media/ab.861daf3ffd06b001a1cb.jpg",
     "static/media/Go2ein.jpg": "/my-profile/static/media/Go2ein.340ac83b1c260725153b.jpg",
     "static/media/aj.jpg": "/my-profile/static/media/aj.237595de7be93e1cc5cb.jpg",
     "static/media/Component 1.png": "/my-profile/static/media/Component 1.e5b5628df95a90122ec2.png",
     "static/media/opera-browser-neon-wallpaper-preview.jpg": "/my-profile/static/media/opera-browser-neon-wallpaper-preview.eb7818005c135b8cdb0d.jpg",
     "index.html": "/my-profile/index.html",
-    "main.22cb33ad.css.map": "/my-profile/static/css/main.22cb33ad.css.map",
-    "main.2a00caf9.js.map": "/my-profile/static/js/main.2a00caf9.js.map",
+    "main.2d9ad600.css.map": "/my-profile/static/css/main.2d9ad600.css.map",
+    "main.c40ae5f0.js.map": "/my-profile/static/js/main.c40ae5f0.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-profile/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22cb33ad.css",
-    "static/js/main.2a00caf9.js"
+    "static/css/main.2d9ad600.css",
+    "static/js/main.c40ae5f0.js"
   ]
 }
