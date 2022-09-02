@@ -25,7 +25,7 @@ const Home = () => {
         <div className="out animattion-div">
           <div className="h">
             <div className="text">
-              hello, I'm
+              Hello, I'm
               <h2> AJAY ANANDRAO</h2>
               Frontend developer
             </div>

@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
      <nav className="navbar navbar-expand-md navbar-dark">
         <div className="container-fluid ">
-          <a className="navbar-brand" id="ajay" href="./index.html">My Profile</a>
+          <Link className="navbar-brand" id="ajay" to="/">My Profile</Link>
     
           <button className="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"aria-controls="navbarNavDropdown"aria-expanded="false" aria-label="Toggle navigation" >
           <i style={{ fontSize:"28px"}} className="fa-solid fa-bars"></i>

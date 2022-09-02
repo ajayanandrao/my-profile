@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./Page/About";
+import OverlayTwo from "./Page/About inner card/OverlayTwo";
 import Contact from "./Page/Contact";
 import Div from "./Page/Div";
 import Home from "./Page/Home";
@@ -19,6 +20,7 @@ function App() {
         </Routes>
       </Router>
       {/* <Div/> */}
+      {/* <OverlayTwo/> */}
     </>
   );
 }

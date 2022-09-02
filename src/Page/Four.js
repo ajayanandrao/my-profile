@@ -28,7 +28,7 @@ const Four = () => {
                     <div className="designation">Frontend Developer</div>
                 </div>
                 <div className="face back-face"> <span className="fas fa-quote-left"></span>
-                    <div className="testimonial"> I made bacck the purchase price in just 48 hours! Thank you for making it pain less, pleasant. The service was execellent. I will refer everyone I know. </div> <span className="fas fa-quote-right"></span>
+                    <div className="testimonial"> I made back the purchase price in just 48 hours! Thank you for making it pain less, pleasant. The service was execellent. I will refer everyone I know. </div> <span className="fas fa-quote-right"></span>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ const Four = () => {
                     <div className="designation">Android Developer</div>
                 </div>
                 <div className="face back-face"> <span className="fas fa-quote-left"></span>
-                    <div className="testimonial"> Really good, you have saved our business! I made bacck the purchase price in just 48 hours! man, this thing is getting better and better as I learn more about it. </div> <span className="fas fa-quote-right"></span>
+                    <div className="testimonial"> Really good, you have saved our business! I made back the purchase price in just 48 hours! man, this thing is getting better and better as I learn more about it. </div> <span className="fas fa-quote-right"></span>
                 </div>
             </div>
         </div>

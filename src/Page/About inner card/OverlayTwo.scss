@@ -1,0 +1,53 @@
+@import '../mixin.scss';
+
+.overlayTwo-container{
+    min-width:500px;
+    height: 400px;
+    border-radius: 0.5em 1.1em 0.5em 0.5em;
+    background: #2c3e50;
+
+    .xx{
+        width: 35px;
+        height: 35px;
+        border-radius: 500%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        cursor: pointer;
+    }
+    .about-inner-text{
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+    }
+    .Experience-page-two-span{
+        display: flex;
+        color: white;
+        margin: 30px 0px;
+    text-align: center;
+    justify-content: center;
+    .about-inner-text{
+    display: grid;
+    }
+    }
+    .product-card-text{
+        padding:30px;
+      }
+      .ex-icon{
+        display: flex;
+        .material-icons{
+          margin-right: 10px;
+        }
+        .ex-inner-icon{
+            display: flex;
+        }
+    }
+}
+
+
+@include mobile{
+    .overlayTwo-container{
+        min-width: 350px;
+    }
+}
