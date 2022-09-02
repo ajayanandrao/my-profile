@@ -43,7 +43,7 @@ const Over = () => {
 <div className='overlay-center-container'>
 
     <div className='card-right-container'>
-        <div className='x' onClick={off}>X</div>
+        <div className='x btn-glass' onClick={off}>X</div>
         
         <div className="card-text-flex">
         <div className="col-6">
@@ -72,6 +72,7 @@ const Over = () => {
                   <div className="ex-icon">
                     <i className="material-icons">verified</i>React<br/>Intermediate
                   </div>
+                  
                 </div>
         </div>
     </div>
@@ -93,7 +94,11 @@ const Over = () => {
                     <i className="material-icons bg-1">verified</i>python <br/>Excellent
                   </div>
                 </div>
-                <div className="start"></div>
+                <div className="start">
+                <div className="ex-icon">
+                    <i className="material-icons bg-1">verified</i>Firebase <br/>Intermediate
+                  </div>
+                </div>
     </div>
     </div>
 </div>
