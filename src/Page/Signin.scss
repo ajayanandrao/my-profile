@@ -1,6 +1,15 @@
 @import './mixin.scss';
 
+// -----------------------------icons -----------------------------
 
+.img-facebook{
+    width: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 100%;
+}
+
+
+// ---------------------------end---------------------------
 .form-center{
     display: flex;
     justify-content: center;
@@ -16,7 +25,8 @@
 .sotioal-icon-row{
     width: 300px;
     display: flex;
-    // background: rebeccapurple;
+    align-items: center;
+
 }
 .sotioal-icon{
     margin-top: 20px;
@@ -29,7 +39,7 @@
 }
 .fa-brand-mg{
     display: flex;
-    margin: 0 20px;
+    margin: 0 18px !important;
 }
 }
 

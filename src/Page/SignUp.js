@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import './SignUp.scss';
+import fb from '../img/icons/f.png';
+import g from '../img/icons/g.png';
+import i from '../img/icons/i.png';
 
 const SignUp = () => {
   return (
@@ -16,19 +19,19 @@ const SignUp = () => {
     </span>
 <div className="container form-center-up">
     <form>    
-      <div className="input-container  mb-4">
+      <div className="input-container  mb-3">
         <input type="text" className="form-control w-150 form-control-md" placeholder="Full Name" id="name"/>
       </div>    
-        <div className="input-container  mb-4">
+        <div className="input-container  mb-3">
           <input type="email" className="form-control w-150 form-control-md" placeholder="Email" id="email" aria-describedby="emailHelp"/>
         </div>
-        <div className="input-container  mb-4">
+        <div className="input-container  mb-3">
           <input type="text" className="form-control w-150 form-control-md" placeholder="Phone Number" id="number" />
         </div>
-        <div className="input-container  mb-4">
+        <div className="input-container  mb-3">
           <input type="password" className="form-control w-150 form-control-md" placeholder="Password" /> 
         </div>
-        <div className="input-container  mb-4">
+        <div className="input-container  mb-3">
           <input type="password" className="form-control w-150 form-control-md" placeholder="Conferm Password" /> 
         </div>
     
@@ -49,16 +52,16 @@ const SignUp = () => {
         <span className="sotioal-icon-row">
             Login with :    
             <div className="fa-brand-mg">
-                <a href="https://www.facebook.com"><i className="fa-brands fa-facebook"></i></a>
-            </div>
-    
-            <div className="fa-brand-mg">
-                <a href="https://www.gmail.com"><i className="fa-brands fa-google" ></i></a>
-            </div>
-            
-            <div className="fa-brand-mg">
-                <a href="https://instagram.com"><i className="fa-brands fa-instagram"></i></a>
-            </div>
+                                <a href="https://www.facebook.com"><img className="img-facebook" src={fb}/></a>
+                            </div>
+
+                            <div className="fa-brand-mg">
+                                <a href="https://www.gmail.com"><img className="img-facebook" src={g}/></a>
+                            </div>
+
+                            <div className="fa-brand-mg">
+                                <a href="https://instagram.com"><img className="img-facebook" src={i}/></a>
+                            </div>
 </span>
 </div>
 </div>

@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import './Signin.scss';
-import fb from '../img/icons/fb-sm.png';
+import fb from '../img/icons/f.png';
+import g from '../img/icons/g.png';
+import i from '../img/icons/i.png';
 
 const Signin = () => {
     return (
@@ -41,15 +43,15 @@ const Signin = () => {
                             Login with :
 
                             <div className="fa-brand-mg">
-                                <a href="https://www.facebook.com"><i className="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.facebook.com"><img className="img-facebook" src={fb}/></a>
                             </div>
 
                             <div className="fa-brand-mg">
-                                <a href="https://www.gmail.com"><i className="fa-brands fa-google" ></i></a>
+                                <a href="https://www.gmail.com"><img className="img-facebook" src={g}/></a>
                             </div>
 
                             <div className="fa-brand-mg">
-                                <a href="https://instagram.com"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://instagram.com"><img className="img-facebook" src={i}/></a>
                             </div>
                         </span>
                     </div>
@@ -59,5 +61,9 @@ const Signin = () => {
         </>
     )
 }
-{/* <i className="fa-brands fa-facebook"></i> */}
+{/* <i className="fa-brands fa-facebook"></i>
+
+<i className="fa-brands fa-facebook"></i>
+
+*/}
 export default Signin
