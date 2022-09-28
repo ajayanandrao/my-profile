@@ -16,18 +16,22 @@
 }
 .navbar{
 	color: rgba(255, 255, 255, 0.774);
-	background: rgba(255, 255, 255, 0.2);
-	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
-	border-bottom: 1px solid rgba(255,255,255,0.3);
-	backdrop-filter: blur(10px);
-	
+	background: rgba(255, 255, 255, 0.01);
+	box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.24); 
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	backdrop-filter: blur(8px);
+
 	display: flex;
 	justify-content: center;
 li{
     padding: 0 0.1rem;
 	a{
-		color: white !important;
+		color:  rgba(255, 255, 255, 0.8) !important;
+		&:hover{
+			color: white !important;
+		}	
 	}
+	
 }
 .navbar-brand{
 	color: whitesmoke;

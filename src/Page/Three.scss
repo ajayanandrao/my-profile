@@ -34,10 +34,19 @@
     }
 }
 .page-three-card-left{
-  background:linear-gradient(to right, $purple,$pink);
+  // background:linear-gradient(to right, $purple,$pink);
+  color: rgba(255, 255, 255, 0.774);
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
+    border-top: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	backdrop-filter: blur(10px);
   display:block;
   padding: 30px;
   height: 450px;
+  border-radius: 0.7rem;
 }
 @include tab{
   .span-display-block{
@@ -62,18 +71,7 @@ display: flex;
   animation-duration: 15s;
   animation-delay: 3s;
 }
-@keyframes background-color {
-  0% {background: linear-gradient(-135deg, #fae37d, #881da8, #20668f)}
-  25% {background: linear-gradient(135deg, #1a4223, #5ee95e)}
-  50% {background: linear-gradient(to bottom, #421a31, #e95ed2)}
-  100% {background: linear-gradient(-135deg, #fae37d, #881da8, #20668f)}
 
-  0% {background: linear-gradient(to right, $pink, $purple)}
-  25% {background: linear-gradient(135deg, #1a4223, #5ee95e)}
-  50% {background: linear-gradient(to bottom, #421a31, #e95ed2)}
-  100% {background: linear-gradient(-135deg, #fae37d, #881da8, #20668f)}
-
-}
 
 
 
@@ -94,7 +92,6 @@ display: flex;
   border: none;
   background-color: inherit
 }
-
 .card .face {
   position: absolute;
   color: #fff;

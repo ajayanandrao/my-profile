@@ -33,7 +33,7 @@ const Signin = () => {
 
                             </div>
                             
-                            <Link className="login-link" to="/signup/">Sing up</Link>                        </form>
+                            <Link className="login-link" to="/signup/"><span className='singup-text'>Sing up</span></Link>                        </form>
                     </div>
                 </span>
 

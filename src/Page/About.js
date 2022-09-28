@@ -8,6 +8,7 @@ import cv from './cv.pdf';
 import OverlayTwo from './About inner card/OverlayTwo';
 import OverlayThree from './About inner card/OverlayThree';
 import PropsTwo from './About inner card/PropsTwo';
+import { motion } from 'framer-motion';
 
 const About = () => {
 
@@ -50,7 +51,11 @@ const About = () => {
         <span className='about-title'><h3>About me</h3></span>
 
         <div className="container">
-          <div className="container-fluid" id="section2">
+          <motion.div
+          transition={{duration:1.7}}
+          initial={{opacity:0,}}
+          animate={{opacity:1,}}
+          className="container-fluid" id="section2">
             <div className="row justify-content-center" >
 
               <div className="About-page-card-Left" onClick={() => imgOn()}>
@@ -59,7 +64,10 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="About-card-home2">
+              <motion.div 
+              transition={{duration:1.7}}
+              initial={{opacity:0,}}
+              animate={{opacity:1,}} className="About-card-home2">
 
                 <span className="flex" >
 
@@ -93,9 +101,9 @@ const About = () => {
                 </a>
                 <Link to="/contact/"> <button className="btn btn-glass m-2" >Contact me</button></Link>
 
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <br />
       </div>

@@ -39,7 +39,7 @@ const SignUp = () => {
         <div className="input-container  form-check">
             
           </div>
-          <Link className="login-link" to="/signin/">Sing in</Link>
+          <Link className="login-link" to="/signin/"><span className='singup-text'>Sing in</span></Link>
           
       </form>
 </div>

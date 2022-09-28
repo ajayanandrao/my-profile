@@ -3,6 +3,14 @@ import './Two.scss';
 import mobile from '../img/Component 1.png';
 
 const Two = () => {
+
+  window.onscroll = function () { myFunction() };
+  function myFunction() {
+    if (document.documentElement.scrollTop > 350) {
+      document.getElementById("myImg").className = "slideUp";
+    }
+  }
+
   return (
    <>
    <div className="Section-2-img" id="Section-2">

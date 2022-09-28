@@ -4,11 +4,15 @@
 
 .img-facebook{
     width: 30px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.356);
     border-radius: 100%;
 }
 
-
+.singup-text{
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+}
 // ---------------------------end---------------------------
 .form-center{
     display: flex;

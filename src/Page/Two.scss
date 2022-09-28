@@ -34,7 +34,7 @@
 
   .Section-2-img{
     width: 100%;
-    background: url("../img/opera-browser-neon-wallpaper-preview.jpg");
+    background: url("../img/wallpepar/artem-sapegin-e2uTOpgW5Ec-unsplash.jpg");
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
 
 .btn-glass{
     color: rgba(255, 255, 255, 0.774);
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.01);
 	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
     border-top: 1px solid rgba(255,255,255,0.3);
 	border-left: 1px solid rgba(255,255,255,0.3);
@@ -78,13 +78,13 @@
     width: 400px;
     height: 300px;
     color: rgba(255, 255, 255, 0.774);
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.1);
 	box-shadow: 0px 0px 50px rgba(0,0,0,0.2); 
     border-top: 1px solid rgba(255,255,255,0.3);
 	border-left: 1px solid rgba(255,255,255,0.3);
     border-right: 1px solid rgba(255,255,255,0.3);
 	border-bottom: 1px solid rgba(255,255,255,0.3);
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@
     }
 
     .Section-2-Card-Chailed{
-        background:linear-gradient(to bottom right, #077BD8, #BC559E);
+        // background:linear-gradient(to bottom right, #077BD8, #BC559E);
         height: 270px;
         width: 370px;
         padding: 10px;
@@ -117,31 +117,31 @@
     align-items: center;
     // background: red;
 
-    .slideUp {
-        animation-name: slideUp;
-        -webkit-animation-name: slideUp;
-        animation-duration: 20s;
-        -webkit-animation-duration: 1.4s;
-        visibility: visible;
-        }
-        
-        @keyframes slideUp {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(50%);
-        } 
-        100% {
-          opacity: 1;
-          -webkit-transform: translateY(0%);
-        }
-        }
-    
-    .div{
-        width:100%;
-        visibility:hidden;
-    }
 }
 
+// ---------------------------
+
+.slideUp {
+  animation-name: slideUp;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.div{
+    visibility: hidden;
+}
+// =========================================
 @include des{
 
 .Section-2-img{

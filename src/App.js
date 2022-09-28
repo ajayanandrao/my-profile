@@ -5,12 +5,15 @@ import Contact from "./Page/Contact";
 import Home from "./Page/Home";
 import Signin from "./Page/Signin";
 import SignUp from "./Page/SignUp";
+import ScrollToTop from "./ScrollTop";
 
 function App() {
   return (
     <>
       <Router basename="/my-profile">
+      <ScrollToTop/>
         <Routes>
+          
           <Route path="/" element={<Home/>}/>
           <Route path="contact" element={<Contact/>}/>
           <Route path="about" element={<About/>}/>

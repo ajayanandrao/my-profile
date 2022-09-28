@@ -1,5 +1,6 @@
 import React from 'react'
 import './OverlayOne.scss';
+import { motion } from 'framer-motion';
 
 const Over = () => {
   
