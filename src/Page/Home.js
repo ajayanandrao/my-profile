@@ -7,6 +7,7 @@ import Four from './Four';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
 
+
 const Home = () => {
 
 
@@ -23,21 +24,37 @@ const Home = () => {
           <div className="h">
             <div className="text ">
               <span className="hello-text">
-                Hello!
+                <motion.div 
+                transition={{duration:2}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}>Hello!</motion.div>
               </span>
               <div className='animattion-div'>
-                I'm
+               <motion.div 
+               transition={{delay:2, duration:1.5}}
+               initial={{x:-200, opacity:0}}
+               animate={{x:0, opacity:1}}>I am</motion.div>
+
                 <div className="text-amination">
-                <h2> AJAY ANANDRAO</h2>
+                <motion.h2 className='myname'
+                transition={{duration:1.9, delay:2.5}}
+                initial={{x:-200, opacity:0}}
+                animate={{x:0, opacity:1}}> AJAY ANANDRAO</motion.h2>
                 </div>
-                Frontend developer
+                <motion.div 
+                transition={{delay:4, duration:1.5}}
+                initial={{opacity:0}}
+                animate={{opacity:1}}>Frontend developer </motion.div>
                 
                 </div>
 
             </div>
 
 
-            <div className="circle-div-center animattion-div">
+            <motion.div 
+            transition={{duration:1.5, delay:2.5}}
+            initial={{x:-200, opacity:0}}
+            animate={{x:0, opacity:1}} className="circle-div-center animattion-div">
               <div className="Circle-one">
                 <div className=" Circle-outer-one">
                   <div className="Circle-outer-margin">
@@ -50,16 +67,19 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             
 
 
-            <div className="mouse-container">
+            <motion.div
+            transition={{delay:4, duration:1.5}}
+            initial={{opacity:0}}
+            animate={{opacity:1}} className="mouse-container">
               <a href="#Section-2">
                 <div className='mouse' id='c'>
                   <div className="dot" id='dot'></div>
                 </div></a>
-            </div>
+            </motion.div>
             
 
 

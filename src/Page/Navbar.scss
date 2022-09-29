@@ -1,5 +1,12 @@
 @import "./mixin.scss";
 
+
+.fa-home{
+	font-size: 22px;
+}
+
+
+// --------------------------------
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -33,12 +40,13 @@ li{
 	}
 	
 }
+
 .navbar-brand{
-	color: whitesmoke;
 	margin-left: 40px;
 	font-weight: 500;
 }
 }
+
 .navbar-toggler{       
 	border: none;
 }

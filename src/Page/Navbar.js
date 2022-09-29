@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
+import H from '.././img/icons/h.png';
+import person from '.././img/icons/pp.png';
 
 const Navbar = () => {
   return (
     <>
-     <nav className="navbar navbar-expand-md navbar-dark">
+     <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid ">
           <Link className="navbar-brand" id="ajay" to="/">My Profile</Link>
     
@@ -18,16 +20,26 @@ const Navbar = () => {
             <div className="c" id="c">
             <ul className="navbar-nav "  id="ul">
               <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/">
+              <i class="fas fa-home"></i>
+              </Link>
               </li>
               <li className="nav-item">
-               <Link className="nav-link" to="/contact/">Contact</Link>
+               <Link className="nav-link" to="/contact/">
+                Contact
+               </Link>
               </li>
               <li className="nav-item">
-                <Link className='nav-link' to="/about/">About</Link>
+                <Link className='nav-link' to="/about/">
+                  About
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className='nav-link' to="/signin/">Sign in</Link>
+                <Link className='nav-link' to="/">My Project</Link>
+              </li>
+              <li className="nav-item">
+                <Link className='nav-link' to="/signin/">Log in
+                </Link>
               </li>
               
             </ul>

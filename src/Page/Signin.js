@@ -4,9 +4,9 @@ import Navbar from './Navbar';
 import './Signin.scss';
 import fb from '../img/icons/f.png';
 import g from '../img/icons/g.png';
-import i from '../img/icons/i.png';
+import i from '../img/icons/ii.png';
 
-const Signin = () => {
+const Signin = (props) => {
     return (
         <>
 
@@ -51,7 +51,7 @@ const Signin = () => {
                             </div>
 
                             <div className="fa-brand-mg">
-                                <a href="https://instagram.com"><img className="img-facebook" src={i}/></a>
+                                <a href="https://instagram.com"> <img src={i}/> </a>
                             </div>
                         </span>
                     </div>

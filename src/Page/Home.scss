@@ -3,54 +3,54 @@
 
 ////////////////////////scroll bar End /////////////////////////////////
 
-.animattion-div{
+// .animattion-div{
 
-  animation-name: animattion-div;
-  -webkit-animation-name: animattion-div;
+//   animation-name: animattion-div;
+//   -webkit-animation-name: animattion-div;
   
-  animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  visibility: visible;
-} 
-@keyframes animattion-div {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-70%);
+//   animation-duration: 4s;
+//   -webkit-animation-duration: 4s;
+//   visibility: visible;
+// } 
+// @keyframes animattion-div {
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateX(-70%);
     
-  } 
-  1% {
-    opacity: 0.2;
-    -webkit-transform: translateX(-70%);
+//   } 
+//   1% {
+//     opacity: 0.2;
+//     -webkit-transform: translateX(-70%);
     
-  }
+//   }
 
-  100% {
-    opacity: 5;
-    -webkit-transform: translateX(0%);
-  }
-}
+//   100% {
+//     opacity: 5;
+//     -webkit-transform: translateX(0%);
+//   }
+// }
 
 // ---------------------------
-.text-amination{
+// .text-amination{
 
-  animation-name: text-amination;
-  -webkit-animation-name: text-amination;
+//   animation-name: text-amination;
+//   -webkit-animation-name: text-amination;
   
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  visibility: visible;
-} 
-@keyframes text-amination {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-50%);
-  } 
+//   animation-duration: 3s;
+//   -webkit-animation-duration: 3s;
+//   visibility: visible;
+// } 
+// @keyframes text-amination {
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateX(-50%);
+//   } 
 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0%);
-  }
-}
+//   100% {
+//     opacity: 1;
+//     -webkit-transform: translateX(0%);
+//   }
+// }
 // scroll animation start ====================>
 
 // End =======================================>
@@ -130,25 +130,32 @@
 
 }
 
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../img/fonts/aileron/Aileron-Light.otf) format('woff');
+}
+
 .h{
     // background: red ;
     display:block;
     justify-content: center;
     align-items: center;
     width: 320px;
-
+  
 .text{
     text-align: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
     // background: blue;
     color: white;
   }
   .hello-text{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 600;
     color: #2E86C1;
+    font-family: MyFont;
+    
   }
 }
 
