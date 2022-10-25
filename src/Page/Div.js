@@ -42,44 +42,44 @@ const Div = () => {
 <div id="overlay">
 <div id="text">
 
-  <div class="container top">
-    <div class="container-fluid" id="section2">
+  <div className="container top">
+    <div className="container-fluid" id="section2">
 
-      <div class="row justify-content-center">
+      <div className="row justify-content-center">
       
 
-        <div class="Experience-page-card-Left">
-          <div class="Experience-card3">
-            <button class="btn btn-glass page-card-x-btn-Exp-one" onClick={off}>X</button>
-            <div class="Experience-Card-Chailed">
-              <p class="div-center"> Frontend developer</p>
-              <div class="ex-inner-left-one">
+        <div className="Experience-page-card-Left">
+          <div className="Experience-card3">
+            <button className="btn btn-glass page-card-x-btn-Exp-one" onClick={off}>X</button>
+            <div className="Experience-Card-Chailed">
+              <p className="div-center"> Frontend developer</p>
+              <div className="ex-inner-left-one">
 
-                <div class="col-6">
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>HTML<br/>Advanced
+                <div className="col-6">
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>HTML<br/>Advanced
                   </div>
                   <br/>
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>CSS<br/>Advanced
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>CSS<br/>Advanced
                   </div>
                   <br/>
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>JavaScript<br/>Excellent
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>JavaScript<br/>Excellent
                   </div>
                 </div>
 
-                <div class="col-6">
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>Bootstrap<br/>Excellent
+                <div className="col-6">
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>Bootstrap<br/>Excellent
                   </div>
                   <br/>
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>Sass<br/>Excellent
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>Sass<br/>Excellent
                   </div>
                   <br/>
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>React<br/>Intermediate
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>React<br/>Intermediate
                   </div>
                 </div>
               </div>
@@ -87,30 +87,30 @@ const Div = () => {
           </div>
         </div>
 
-        <div class="Experience-page-card-Left">
+        <div className="Experience-page-card-Left">
 
-          <div class="Experience-card3">
-            <button class="btn btn-glass page-card-x-btn-Exp" onClick={off}>X</button>
-            <div class="Experience-Card-Chailed">
+          <div className="Experience-card3">
+            <button className="btn btn-glass page-card-x-btn-Exp" onClick={off}>X</button>
+            <div className="Experience-Card-Chailed">
 
-              <p class="div-center"> Backend developer</p>
-              <div class="ex-inner-left-one">
+              <p className="div-center"> Backend developer</p>
+              <div className="ex-inner-left-one">
 
-                <div class="col-6">
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>PHP <br/>Intermediate
+                <div className="col-6">
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>PHP <br/>Intermediate
                   </div>
                   <br/>
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>Mysqli <br/>Intermediate
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>Mysqli <br/>Intermediate
                   </div>
                   <br/>
-                  <div class="ex-icon">
-                    <i class="material-icons">verified</i>python <br/>Excellent
+                  <div className="ex-icon">
+                    <i className="material-icons">verified</i>python <br/>Excellent
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div className="col-6">
 
                 </div>
               </div>
