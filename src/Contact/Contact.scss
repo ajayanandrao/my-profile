@@ -1,0 +1,223 @@
+@import "./../Styles/Mixin_New.scss";
+
+.Contact-div-wrapper {
+    width: 100%;
+    height: calc(100vh - 50px) !important;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    // position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+
+    @include respond-to(xl) {
+        height: 100vh !important;
+        padding-bottom: 50px;
+    }
+
+    @include respond-to(lg) {
+        height: 100% !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(md) {
+        height: 100% !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(sm) {
+        height: 100% !important;
+        padding: 50px 0;
+    }
+
+    @include respond-to(xs) {
+        height: 100% !important;
+        padding: 1rem;
+        padding-bottom: 50px;
+    }
+
+    .tile-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .title {
+            text-align: center;
+            background: linear-gradient(to right, #FE2E64 20%, #DBA901);
+            color: transparent;
+            -webkit-background-clip: text;
+            margin-top: 0px;
+        }
+    }
+
+    .star {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .contact-div-contact {
+        width: 100%;
+        max-width: 850px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond-to(sm) {
+            height: 100%;
+            flex-direction: column;
+            margin: 20px auto;
+        }
+
+        @include respond-to(xs) {
+            height: 100%;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        .contact-option {
+            position: relative;
+
+            @include respond-to(sm) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include respond-to(xs) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .card-main {
+                position: relative;
+
+                @include respond-to(sm) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                @include respond-to(xs) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .card-bg {
+                    width: 250px;
+                    height: 110px;
+                    background: linear-gradient(140deg, #FE2E64 10%, #DBA901);
+                    border-radius: 5px;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: white;
+                    font-weight: 400;
+                    transition: 0.3s ease-in-out;
+                    border: 1px solid white;
+
+                    .text-icon-div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 2px;
+                        flex-direction: column;
+
+                        .contact-icons {
+                            width: 40px;
+                            height: 40px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    &:hover {
+                        transform: translateX(15px);
+                    }
+                }
+            }
+        }
+
+        .Form-div {
+            width: 100%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            @include respond-to(sm) {
+                max-width: 350px;
+                margin-top: 50px;
+            }
+
+            @include respond-to(xs) {
+                max-width: 300px;
+                margin-top: 50px;
+            }
+
+            .input {
+                width: 100%;
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: white;
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.781);
+                }
+            }
+
+            .input-line {
+                margin-top: 5px;
+                width: 100%;
+                height: 3px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+                border-radius: 20px;
+            }
+
+            .submit {
+                margin-top: 50px;
+                width: max-content;
+                padding: 5px 10px;
+                border-radius: 20px;
+                background: linear-gradient(130deg, #FE2E64 30%, #DBA901);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.toast-div {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+
+    .toast-inner-div {
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        padding: 8px 20px;
+        background: #013ADF; 
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        box-shadow: 0px 0px 18px #013ADF;
+    }
+}

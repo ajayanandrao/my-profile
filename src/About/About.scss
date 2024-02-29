@@ -1,0 +1,292 @@
+@import "./../Styles/Mixin_New.scss";
+
+
+.about-container{
+    overflow: hidden;
+}
+
+.About-div-wrapper {
+    width: 100%;
+    height: calc(100vh - 50px) !important;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(xl) {
+        height: 100vh !important;
+        padding-bottom: 50px;
+    }
+
+    @include respond-to(lg) {
+        height: 100% !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(md) {
+        height: 100% !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(sm) {
+        height: 100% !important;
+        padding-bottom: 50px;
+    }
+
+    @include respond-to(xs) {
+        height: 100% !important;
+        padding-bottom: 50px;
+    }
+
+
+
+    .SectionTwo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        .SectionText {
+            background: linear-gradient(to right, #FE2E64 20%, #DBA901);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+
+    .About-Text {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        padding: 1rem;
+    }
+
+    .about-me {
+        width: 100%;
+        max-width: 850px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond-to(md) {
+            padding: 0 20px;
+        }
+
+        @include respond-to(sm) {
+            flex-direction: column;
+        }
+
+        @include respond-to(xs) {
+            flex-direction: column;
+            padding: 0 1rem;
+        }
+
+        .about-ring-div {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transition: 0.3s ease-in-out;
+
+
+            .profile-img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+
+            .ring {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .ring-img {
+                    width: 130px;
+                    height: 130px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .about-skill-div {
+            width: 100%;
+            max-width: 380px;
+            position: relative;
+
+            @include respond-to(sm) {
+                margin-top: 50px;
+            }
+
+            @include respond-to(xs) {
+                margin-top: 50px;
+            }
+
+            .skill-name {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .progress-line {
+                width: 100%;
+                height: 10px;
+                border-radius: 10px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+            }
+
+            .fb {
+                width: 90%;
+                height: 10px;
+                border-radius: 10px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+            }
+
+            .rn {
+                width: 80%;
+                height: 10px;
+                border-radius: 10px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+            }
+
+            .js {
+                width: 90%;
+                height: 10px;
+                border-radius: 10px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+            }
+        }
+
+        .skill {
+            width: 80px;
+            cursor: pointer;
+        }
+
+        .submit {
+            width: max-content;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background: linear-gradient(130deg, #FE2E64 30%, #DBA901);
+            cursor: pointer;
+        }
+    }
+}
+
+.progress {
+    height: 10px;
+    border-radius: 30px;
+    background: black;
+
+    .progress-bar {
+        background: linear-gradient(to right, #FE2E64, #DBA901, #FE2E64, #DBA901);
+        height: 10px;
+        border-radius: 30px;
+        transition: 2s ease-in;
+    }
+}
+
+
+.overlay-skill {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include respond-to(xs) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .overlay-card {
+        width: 100%;
+        max-width: 600px;
+        padding: 3rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 35px;
+        border-radius: 10px;
+        backdrop-filter: blur(18px);
+        background: linear-gradient(to right, #ffffff4d, #00000069);
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 1px solid rgba(255, 255, 255, 0.788);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+        box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+        transition: 0.3s ease-in-out;
+
+        @include respond-to(xs) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 3rem 0.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .sill-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+
+            @include respond-to(xs) {
+                top: 5px;
+                right: 5px;
+            }
+        }
+
+        .skill-div {
+            display: flex;
+            align-items: center;
+
+            @include respond-to(xs) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .skill-icon {
+                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+                object-position: center;
+                border-radius: 5px;
+            }
+
+            .skill-name {
+                @include respond-to(xs) {
+                    margin-top: 0.5rem;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+
+    }
+
+}

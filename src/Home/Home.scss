@@ -1,0 +1,85 @@
+@import "./../Styles/Mixin_New.scss";
+
+.home {
+    display: none;
+
+    @include respond-to(xl) {
+        display: block;
+    }
+}
+
+.home-two {}
+
+.SplinePage {
+    // width: 400px;
+    // background-color: red;
+    position: relative;
+    display: none;
+    z-index: 1;
+
+    @include respond-to(xl) {
+        display: flex;
+    }
+}
+
+.spline {
+    position: relative;
+    // color: #00ffff;
+
+    .spline-div {}
+}
+
+
+.animation {
+    width: 100%;
+    height: 400px;
+    background: red;
+    position: relative;
+    z-index: 1;
+    animation: identifier linear;
+    animation-duration: 0.4s;
+    animation-range: contain;
+}
+
+@keyframes identifier {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+.counter-loader {
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+
+}
+
+
+.counter-progress {
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    border-radius: 50px;
+    width: 100%;
+    transform: scaleX(0);
+    background: #999;
+    transition: all 1s ease;
+    margin-top: 1rem;
+}

@@ -1,0 +1,294 @@
+@import "./../Styles/Mixin_New.scss";
+
+
+.div-wrapper {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    overflow: hidden;
+    // background-color: blue;
+
+    @include respond-to(xl) {
+        height: 600px;
+        // padding-bottom: 50px;
+        // background-color: red;
+    }
+
+    @include respond-to(lg) {
+        height: 100% !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(md) {
+        height: 100% !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(sm) {
+        flex-direction: column;
+        height: calc(100% - 50px) !important;
+        padding-bottom: 100px;
+    }
+
+    @include respond-to(xs) {
+        flex-direction: column;
+        height: 100% !important;
+        padding-bottom: 100px;
+        padding-top: 0.5rem;
+    }
+
+    .div-one {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 1rem;
+        padding: 1rem;
+        // border-bottom: 1px solid white;
+
+
+        @include respond-to(xs) {
+            margin-right: 0;
+        }
+
+        .name-text {
+            @include respond-to(xs) {
+                // justify-content: center;
+                flex-direction: column;
+            }
+        }
+
+        .text-wrapper-one {
+            display: flex;
+            // align-items: center; 
+            position: relative;
+            z-index: 1;
+
+            .iam {
+                display: none;
+
+                @include respond-to(xs) {
+                    display: flex;
+                    // justify-content: center;
+                }
+            }
+
+            .iam-name {
+                @include respond-to(xs) {
+                    display: none;
+                }
+            }
+
+            .hi-hand {
+                width: 70px;
+                height: 70px;
+                object-fit: contain;
+                animation: identifier infinite;
+                animation-duration: 0.7s;
+            }
+
+            @keyframes identifier {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                50% {
+                    transform: rotate(10deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+
+            .my-name {
+                background: linear-gradient(to right, #ff0055, #DBA901);
+                color: transparent;
+                -webkit-background-clip: text;
+                font-size: 42px;
+                font-weight: bold;
+            }
+
+
+            .line {
+                width: 100%;
+                max-width: 100px;
+                border-radius: 10px;
+                height: 6px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+
+                @include respond-to(xs) {
+                    max-width: 60px;
+                }
+            }
+
+            .cercal {
+                width: 45px;
+                height: 45px;
+                background: linear-gradient(to right, #FE2E64, #DBA901);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                .social-icon {
+                    background: #000204;
+                    padding: 5px;
+                    border-radius: 50%;
+                    font-size: 43px;
+                }
+            }
+        }
+
+        .text-m {
+            margin: 20px 0;
+        }
+
+        .social-m {
+            margin: 80px 0;
+
+            @include respond-to(sm) {
+                display: none;
+            }
+
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+
+    }
+
+    .div-two {
+        width: 100%;
+        max-width: 400px;
+        height: 450px;
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+
+        @include respond-to(sm) {
+            height: 500px;
+        }
+
+        .aj-photo-div {
+            width: 250px;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .aj-photo-inner-div {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                // background: linear-gradient(rgba(255, 0, 0, 0) 50%, black 90%);
+                z-index: 1;
+            }
+
+            .aj-photo {
+                width: 250px;
+                position: relative;
+                z-index: 1;
+
+                @include respond-to(xs) {
+                    width: 230px;
+                }
+            }
+        }
+
+
+        .cercal-one {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(to right, #FE2E64, #DBA901);
+            z-index: 2;
+        }
+
+        .cercal-two {
+            position: absolute;
+            right: 35px;
+            bottom: 100px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(to right, #FE2E64, #DBA901);
+            z-index: 2;
+        }
+
+        .star-one {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            z-index: 2;
+        }
+
+        .star-two {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+            z-index: 2;
+        }
+    }
+
+    .social-m {
+        display: none;
+        position: relative;
+        margin-top: 30px;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .line {
+            width: 100%;
+            max-width: 100px;
+            border-radius: 10px;
+            height: 6px;
+            background: linear-gradient(to right, #FE2E64, #DBA901);
+
+            @include respond-to(xs) {
+                max-width: 60px;
+            }
+        }
+
+        .cercal {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(to right, #FE2E64, #DBA901);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .social-icon {
+                background: #000204;
+                padding: 5px;
+                border-radius: 50%;
+                font-size: 43px;
+            }
+        }
+
+        @include respond-to(sm) {
+            display: flex;
+        }
+
+        @include respond-to(xs) {
+            display: flex;
+        }
+    }
+}
