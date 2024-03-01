@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/my-profile/static/css/main.2c42b163.css",
+    "main.js": "/my-profile/static/js/main.d75b9640.js",
+    "static/js/206.8a46e06e.chunk.js": "/my-profile/static/js/206.8a46e06e.chunk.js",
+    "static/media/vChat Cover2.png": "/my-profile/static/media/vChat Cover2.3bc3a4c2cc8e0b835412.png",
+    "static/media/mytube.png": "/my-profile/static/media/mytube.8240a07b42955ce145ff.png",
+    "static/media/0033.png": "/my-profile/static/media/0033.9a6ef5290ab6549b2af2.png",
+    "static/media/React.pdf": "/my-profile/static/media/React.ccd0314cdabef05cbedc.pdf",
+    "static/media/Group.png": "/my-profile/static/media/Group.809c0b8c416b23c0e84a.png",
+    "static/media/movies.png": "/my-profile/static/media/movies.362216e92bbc16bb6c2c.png",
+    "static/media/universalApp.png": "/my-profile/static/media/universalApp.ecd36d236dec8e605e93.png",
+    "static/media/ecom.png": "/my-profile/static/media/ecom.b3120f41c1fa81d9a776.png",
+    "static/media/gcover.png": "/my-profile/static/media/gcover.7640235744cc30e0e195.png",
+    "static/media/todo.png": "/my-profile/static/media/todo.4677651a2c179fb2dbea.png",
+    "static/media/hand.png": "/my-profile/static/media/hand.185249309ccff3149722.png",
+    "static/media/btn.png": "/my-profile/static/media/btn.a18335020fe3192398d3.png",
+    "static/media/Star.png": "/my-profile/static/media/Star.d6ea290effa9b61e05b6.png",
+    "static/media/redux.png": "/my-profile/static/media/redux.5c9c49f0fc7c3382293d.png",
+    "static/media/css-3.png": "/my-profile/static/media/css-3.0f92d136c73764c32d47.png",
+    "static/media/php.png": "/my-profile/static/media/php.5ad0893f0e2b370c6547.png",
+    "index.html": "/my-profile/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.2c42b163.css",
+    "static/js/main.d75b9640.js"
+  ]
+}
