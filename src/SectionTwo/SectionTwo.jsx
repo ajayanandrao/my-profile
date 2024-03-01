@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect} from 'react'
 import "./SectionTwo.scss";
 import ring from "./../img/Group.png"
-import skill from "./../img/btn.png"
 import { RiReactjsLine } from "react-icons/ri";
 import Canvas from '../Canvas/Canvas';
 
@@ -29,12 +28,10 @@ const SectionTwo = () => {
         };
     }, []);
 
-    const boxRef = useRef();
 
     useGSAP(
         () => {
             // const boxes = gsap.utils.toArray('.box');
-            const boxes = boxRef.current;
 
             gsap.to(".skill-div", {
                 x: 0,

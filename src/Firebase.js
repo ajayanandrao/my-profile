@@ -9,9 +9,9 @@ import { OAuthProvider } from "firebase/auth";
 
 import { getFirestore } from "firebase/firestore"
 import { getStorage } from "firebase/storage";
-import { getDatabase, onValue, ref, set } from "firebase/database";
+import { getDatabase } from "firebase/database";
 
-import { firebase } from "@firebase/app";
+// import { firebase } from "@firebase/app";
 import "@firebase/firestore";
 
 

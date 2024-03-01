@@ -5,6 +5,7 @@ import Navbar from "./Navbar/Navbar";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
 import ScrollToTop from "./ScrollTop";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route exact path="about" element={<About />} />
           <Route exact path="contact" element={<Contact />} />
         </Routes>
-
+        <Footer />
       </Router>
     </>
   );

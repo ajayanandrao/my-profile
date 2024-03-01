@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import "./SectionOne.scss";
 import hand from "./../img/hand.png"
 import start from "./../img/Star.png"
@@ -8,8 +8,6 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
 import aj from "./../img/0033.png";
 import Canvas from '../Canvas/Canvas';
-import { useDispatch, useSelector } from 'react-redux';
-import { canvasH, canvasW } from '../Redux/CanvasSlice';
 import { motion } from "framer-motion";
 
 
