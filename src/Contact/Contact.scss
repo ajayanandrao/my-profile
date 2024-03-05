@@ -129,6 +129,8 @@
                     font-weight: 400;
                     transition: 0.3s ease-in-out;
                     border: 1px solid white;
+                    position: relative;
+                    z-index: 2;
 
                     .text-icon-div {
                         display: flex;
@@ -175,6 +177,8 @@
                 outline: none;
                 font-size: 18px;
                 color: white;
+                position: relative;
+                z-index: 2;
 
                 &::placeholder {
                     color: rgba(255, 255, 255, 0.781);
@@ -196,6 +200,8 @@
                 border-radius: 20px;
                 background: linear-gradient(130deg, #FE2E64 30%, #DBA901);
                 cursor: pointer;
+                position: relative;
+                z-index: 2;
             }
         }
     }

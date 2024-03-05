@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Home.scss";
 import SectionOne from '../SectionOne/SectionOne';
 import SectionTwo from '../SectionTwo/SectionTwo';
 import SectionThree from '../SectionThree/SectionThree';
 import SectionFour from '../SectionFour/SectionFour';
 import Project from '../Project/Project';
-import Lenis from '@studio-freight/lenis'
+import Lenis from '@studio-freight/lenis';
+
+import { motion } from "framer-motion"
 
 const Home = () => {
 
@@ -19,11 +21,16 @@ const Home = () => {
         lenis.raf(time)
         requestAnimationFrame(raf)
     }
-    requestAnimationFrame(raf)
+    requestAnimationFrame(raf);
+
+    // mouse follower
+
+    
 
     return (
         <>
             <div className='home-two'>
+
                 <SectionOne />
                 <SectionTwo />
                 <Project />

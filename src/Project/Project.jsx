@@ -7,6 +7,7 @@ import golden from "./../img/gcover.png"
 import todo from "./../img/todo.png"
 import ecom from "./../img/ecom.png";
 import tube from "./../img/mytube.png";
+import iphone from "./../img/iphone13.png";
 
 
 const Project = () => {
@@ -50,11 +51,21 @@ const Project = () => {
 
             <div className="pro-grid-center">
                 <div className="project-wrapper">
+
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/VChat/">
                             <img src={vchat} className='project-cover' style={{ objectFit: "contain" }} alt="" />
                             <div className="project-name">
                                 <h2 className='pro-text'>VChat</h2>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div className="project-cover-div iphone" style={{ height: `${num}px` }}>
+                        <a target="_blank" href="https://ajayanandrao.github.io/VChat/">
+                            <img src={iphone} className='project-cover' style={{ objectFit: "contain" }} alt="" />
+                            <div className="project-name">
+                                <h2 className='pro-text'>iPhone13</h2>
 
                             </div>
                         </a>

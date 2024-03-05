@@ -56,6 +56,8 @@ const SectionOne = () => {
     //     };
     // }, []);
 
+    
+
 
     return (
         <>

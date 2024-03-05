@@ -1,5 +1,23 @@
 @import "./../Styles/Mixin_New.scss";
 
+.circle {
+    width: 100%;
+    height: 100%;
+    mask-image: url(.//Polygon.png);
+    background: #DBA901;
+    // background: linear-gradient(to right, #FE2E64, #01db01, #DBA901);
+    mask-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    mask-size: 80px 80px;
+    z-index: 1;
+    /* Specify both width and height */
+
+}
+
+
+
 .home {
     display: none;
 
@@ -83,7 +101,8 @@
     transition: all 1s ease;
     margin-top: 1rem;
 }
-.footer{
+
+.footer {
     width: 100%;
     max-width: 240px;
     height: 50px;

@@ -3,7 +3,6 @@
     height: 50px;
     position: static;
     top: 0;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -13,7 +12,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        z-index: 1;
+        z-index: 2;
 
         .nav-brand {
             background: linear-gradient(to right,  #ff0055, #DBA901);
@@ -22,6 +21,7 @@
             font-weight: bold;
             font-size: 26px;
             position: relative;
+            z-index: 2;
         }
     }
 
@@ -35,7 +35,7 @@
         position: relative;
         font-weight: 600;
         font-size: 18px;
-        z-index: 1;
+        z-index: 2;
         .line {
             width: 0;
             height: 3px;

@@ -5,7 +5,7 @@
     height: 100%;
     padding: 1rem;
     padding-bottom: 50px;
-  
+
 
     .pro-title {
         width: 100%;
@@ -72,6 +72,20 @@
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 1rem;
             margin: 10px 0;
+        }
+
+        .iphone {
+            @include respond-to(xs) {
+                display: none;
+            }
+
+            @include respond-to(sm) {
+                display: none;
+            }
+
+            @include respond-to(md) {
+                display: none;
+            }
         }
 
         .project-cover-div {

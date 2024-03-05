@@ -43,8 +43,32 @@ const About = () => {
         setOn(!on);
     }
 
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+
+        const updateMousePosition = (e) => {
+            setMousePosition({ x: e.clientX, y: e.clientY });
+        };
+
+        window.addEventListener("mousemove", updateMousePosition);
+
+        return () => {
+            window.removeEventListener("mousemove", updateMousePosition);
+        };
+    }, []);
+
     return (
         <div className='about-container'>
+            <motion.div
+                animate={{
+                    x: mousePosition.x - 100 / 2, // Adjust according to the size of your circle
+                    y: mousePosition.y - 100 / 2, // Adjust according to the size of your circle
+                }}
+                transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+                className="circle"
+            ></motion.div>
+
             <Canvas />
             {on &&
                 <div className="overlay-skill">

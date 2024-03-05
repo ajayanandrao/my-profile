@@ -171,6 +171,8 @@
         .skill {
             width: 80px;
             cursor: pointer;
+            position: relative;
+            z-index: 2;
         }
 
         .submit {
@@ -179,6 +181,8 @@
             border-radius: 20px;
             background: linear-gradient(130deg, #FE2E64 30%, #DBA901);
             cursor: pointer;
+            position: relative;
+            z-index: 2;
         }
     }
 }
