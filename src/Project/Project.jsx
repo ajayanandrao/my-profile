@@ -62,7 +62,7 @@ const Project = () => {
                         </a>
                     </div>
                     <div className="project-cover-div iphone" style={{ height: `${num}px` }}>
-                        <a target="_blank" href="https://ajayanandrao.github.io/VChat/">
+                        <a target="_blank" href="https://ajayanandrao.github.io/iphone/">
                             <img src={iphone} className='project-cover' style={{ objectFit: "contain" }} alt="" />
                             <div className="project-name">
                                 <h2 className='pro-text'>iPhone13</h2>
