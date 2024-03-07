@@ -74,19 +74,19 @@
             margin: 10px 0;
         }
 
-        .iphone {
-            @include respond-to(xs) {
-                display: none;
-            }
+        // .iphone {
+        //     @include respond-to(xs) {
+        //         display: none;
+        //     }
 
-            @include respond-to(sm) {
-                display: none;
-            }
+        //     @include respond-to(sm) {
+        //         display: none;
+        //     }
 
-            @include respond-to(md) {
-                display: none;
-            }
-        }
+        //     @include respond-to(md) {
+        //         display: none;
+        //     }
+        // }
 
         .project-cover-div {
             position: sticky;
