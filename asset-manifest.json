@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.9157e277.css",
+    "main.css": "/my-profile/static/css/main.2c7a4e67.css",
     "main.js": "/my-profile/static/js/main.dace401d.js",
     "static/js/206.8a46e06e.chunk.js": "/my-profile/static/js/206.8a46e06e.chunk.js",
     "static/media/vChat Cover2.png": "/my-profile/static/media/vChat Cover2.3bc3a4c2cc8e0b835412.png",
@@ -23,7 +23,7 @@
     "index.html": "/my-profile/index.html"
   },
   "entrypoints": [
-    "static/css/main.9157e277.css",
+    "static/css/main.2c7a4e67.css",
     "static/js/main.dace401d.js"
   ]
 }
