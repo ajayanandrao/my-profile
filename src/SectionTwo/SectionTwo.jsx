@@ -1,13 +1,15 @@
-import React, { useEffect} from 'react'
+import React, { useEffect } from 'react'
 import "./SectionTwo.scss";
 import ring from "./../img/Group.png"
 import { RiReactjsLine } from "react-icons/ri";
 import Canvas from '../Canvas/Canvas';
 
+import { motion } from "framer-motion"
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 
 const SectionTwo = () => {
 
@@ -80,9 +82,25 @@ const SectionTwo = () => {
 
                 <div className="about-me" >
                     <div className="ring-div">
-                        <div className='ring' style={{ backgroundImage: `url(${ring})` }} >
-                            <RiReactjsLine style={{ fontSize: "80px" }} />
-                        </div>
+                        <motion.div
+                            animate={{ rotate: 300 }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                repeatType: "reverse",
+                            }}
+                            className='ring' style={{ backgroundImage: `url(${ring})` }} >
+                            <motion.div
+                                animate={{ rotate: -360 }}
+                                transition={{
+                                    duration: 1,
+                                    repeat: Infinity,
+                                    repeatType: "reverse",
+                                }}
+                            >
+                                <RiReactjsLine style={{ fontSize: "80px" }} />
+                            </motion.div>
+                        </motion.div>
                     </div>
 
                     <div className="skill-div">

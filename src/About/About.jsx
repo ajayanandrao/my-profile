@@ -140,18 +140,30 @@ const About = () => {
                 </div>
                 <p className='About-Text' >im a full stack developer in React and Firebase also ux /ui designer who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work.</p>
 
-                <div
-                    className="about-me">
-                    <motion.div
-                        transition={{ duration: 3, delay: 1 }}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                <div className="about-me">
+
+                    <div
                         className="about-ring-div">
-                        <div className='ring' style={{ backgroundImage: `url(${ring})` }}>
-                            {/* <img src={ab} className='ring-img' alt="" /> */}
-                            <RiReactjsLine style={{ fontSize: "80px" }} />
-                        </div>
-                    </motion.div>
+                        <motion.div
+                            animate={{ rotate: 300 }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                repeatType: "reverse",
+                            }}
+                            className='ring' style={{ backgroundImage: `url(${ring})` }}>
+                            <motion.div
+                                animate={{ rotate: -360 }}
+                                transition={{
+                                    duration: 1,
+                                    repeat: Infinity,
+                                    repeatType: "reverse",
+                                }}
+                            >
+                                <RiReactjsLine style={{ fontSize: "80px" }} />
+                            </motion.div>
+                        </motion.div>
+                    </div>
 
                     <motion.div
 

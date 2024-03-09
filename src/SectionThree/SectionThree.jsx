@@ -15,6 +15,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const SectionThree = () => {
+    const tl = gsap.timeline();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -84,6 +85,10 @@ const SectionThree = () => {
         // { scope: main }
     );
 
+    const one = () => {
+        tl.to(".")
+    }
+
 
     return (
         <>
@@ -105,7 +110,10 @@ const SectionThree = () => {
                     <div className="contact-option">
 
                         <a href='mailto:ajayanandrao@outlook.com' className='contact-card-link'>
-                            <div className='card-main'>
+                            <motion.div
+                                transition={{ duration: 0.3 }}
+                                whileHover={{ y: -15, scale: 1.1 }}
+                                className='card-main'>
                                 <div className='card-bg btn'>
                                     <div className='text-icon-div'>
                                         <img src={mail} alt="" className='contact-icons' />
@@ -113,7 +121,7 @@ const SectionThree = () => {
                                     </div>
                                     <div className='text-icon-div' style={{ textTransform: "lowercase" }}>ajayanandrao@outlook.com</div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </a>
 
                         <a href='https://web.whatsapp.com/' target='blank'>
@@ -129,14 +137,18 @@ const SectionThree = () => {
                         </a>
 
                         <a href='https://ajayanandrao.github.io/VChat/qHIcUV2VcxQ11kasusyE5kFZ1713' target='blank'>
-                            <div className='mt-3 card-main'>
+                            <motion.div
+                                transition={{ duration: 0.3 }}
+                                whileHover={{ y: 15, scale: 1.1 }}
+
+                                className='mt-3 card-main'>
                                 <div className='card-bg btn'>
                                     <div className='text-icon-div'>
                                         <img src={v} alt="" className='contact-icons' />
                                         live:ajayanandrao02
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </a>
                     </div>
 
