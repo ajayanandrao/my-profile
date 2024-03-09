@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.2c7a4e67.css",
-    "main.js": "/my-profile/static/js/main.dace401d.js",
+    "main.css": "/my-profile/static/css/main.eab43061.css",
+    "main.js": "/my-profile/static/js/main.9ffb981c.js",
     "static/js/206.8a46e06e.chunk.js": "/my-profile/static/js/206.8a46e06e.chunk.js",
     "static/media/vChat Cover2.png": "/my-profile/static/media/vChat Cover2.3bc3a4c2cc8e0b835412.png",
     "static/media/mytube.png": "/my-profile/static/media/mytube.8240a07b42955ce145ff.png",
@@ -23,7 +23,7 @@
     "index.html": "/my-profile/index.html"
   },
   "entrypoints": [
-    "static/css/main.2c7a4e67.css",
-    "static/js/main.dace401d.js"
+    "static/css/main.eab43061.css",
+    "static/js/main.9ffb981c.js"
   ]
 }
