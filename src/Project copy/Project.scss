@@ -1,0 +1,209 @@
+@import "./../Styles/Mixin_New.scss";
+
+.project-main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    padding-bottom: 50px;
+
+
+    .pro-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        position: sticky;
+        top: 20px;
+
+        .pro-tile-text {
+            background: linear-gradient(to right, #FE2E64, #DBA901);
+            color: transparent;
+            -webkit-background-clip: text;
+            font-weight: bold;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .pro-title-txt {
+                font-size: 40px;
+            }
+
+            @include respond-to(xs) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 42px;
+            }
+
+            .emoji {
+                width: 100px;
+                height: 100px;
+                margin-right: 15px;
+
+                @include respond-to(xs) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+
+    .pro-grid-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-wrapper {
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        width: 100%;
+        max-width: 900px;
+        margin: 50px 0;
+
+        @include respond-to(sm) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1rem;
+            margin: 0px 0;
+        }
+
+        @include respond-to(xs) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1rem;
+            margin: 10px 0;
+        }
+
+        // .iphone {
+        //     @include respond-to(xs) {
+        //         display: none;
+        //     }
+
+        //     @include respond-to(sm) {
+        //         display: none;
+        //     }
+
+        //     @include respond-to(md) {
+        //         display: none;
+        //     }
+        // }
+
+        .project-cover-div {
+            position: sticky;
+            top: 20px;
+            width: 100%;
+            // max-width: 450px;
+            // height: 400px;
+            margin: 0 auto;
+            border-radius: 5px;
+            background: linear-gradient(150deg, #FE2E64, #DBA901);
+            border-radius: 10px;
+            // padding: 0.4rem;
+            // padding-bottom: 0;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            overflow: hidden;
+
+            @include respond-to(lg) {
+                width: 90%;
+            }
+
+            @include respond-to(md) {
+                width: 90%;
+                top: 150px;
+                // max-width: calc(450px - 50px);
+                // height: calc(250px - 20px);
+            }
+
+            @include respond-to(sm) {
+                width: 90%;
+                top: 150px;
+                // max-width: calc(450px - 50px);
+                // height: calc(250px - 40px);
+            }
+
+            @include respond-to(xs) {
+                top: 170px;
+                max-width: calc(500px - 50px);
+                height: 220px !important;
+            }
+
+            &:hover {
+                .project-name {
+                    opacity: 1;
+                }
+
+                .project-cover {
+                    transform: scale(1);
+                }
+            }
+
+            .project-name {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                // background: linear-gradient(rgba(0, 0, 0, 0.575), black);
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                transition: 0.3s ease-in-out;
+                backdrop-filter: blur(10px);
+                border: 2px solid rgba(255, 255, 255, 0.623);
+
+                @include respond-to(xs) {
+                    display: none;
+                    backdrop-filter: blur(0px);
+                }
+
+                &:hover {
+                    .pro-text {
+                        transform: scale(1);
+                    }
+                }
+
+                .pro-text {
+                    background: linear-gradient(to right, #FE2E64, #DBA901);
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    font-weight: 700;
+                    font-size: 42px;
+                    transform: scale(1.05);
+                    transition: 0.4s ease-in-out;
+
+                    @include respond-to(xs) {
+                        font-size: 30px;
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            .project-cover {
+                // aspect-ratio: 3 / 2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+                transform: scale(1.05);
+                transition: 0.4s ease-in-out;
+
+                @include respond-to(xs) {
+                    transform: scale(1);
+                }
+
+                @include respond-to(sm) {
+                    transform: scale(1);
+                }
+
+                @include respond-to(md) {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

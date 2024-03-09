@@ -2,21 +2,12 @@ import React, { useEffect, useState } from 'react'
 import "./Project.scss"
 import vchat from "./../img/vChat Cover2.png"
 import win from "./../img/universalApp.png"
-import movie from "./../img/zmove.png"
+import movie from "./../img/movies.png"
 import golden from "./../img/gcover.png"
-import todo from "./../img/todocard.png"
-import ecom from "./../img/ecomcard.png";
+import todo from "./../img/todo.png"
+import ecom from "./../img/ecom.png";
 import tube from "./../img/mytube.png";
-import iphone from "./../img/iphone13pro.png";
-
-import vchat1 from "./../img/vChat Cover2.png"
-import win1 from "./../img/universalApp.png"
-import movie1 from "./../img/movies.png"
-import golden1 from "./../img/gcover.png"
-import todo1 from "./../img/todo.png"
-import ecom1 from "./../img/ecom.png";
-import tube1 from "./../img/mytube.png";
-import iphone1 from "./../img/iphone13.png";
+import iphone from "./../img/iphone13.png";
 
 
 const Project = () => {
@@ -64,16 +55,15 @@ const Project = () => {
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/VChat/">
                             <img src={vchat} className='project-cover' style={{ objectFit: "contain" }} alt="" />
-                            <img src={vchat1} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
                             <div className="project-name">
                                 <h2 className='pro-text'>VChat</h2>
+
                             </div>
                         </a>
                     </div>
                     <div className="project-cover-div iphone" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/iphone/">
                             <img src={iphone} className='project-cover' style={{ objectFit: "contain" }} alt="" />
-                            <img src={iphone1} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
                             <div className="project-name">
                                 <h2 className='pro-text'>iPhone13</h2>
 
@@ -84,9 +74,8 @@ const Project = () => {
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/Golden/">
                             <img src={golden} className='project-cover' alt="" />
-                            <img src={golden1} className='project-cover1' alt="" />
                             <div className="project-name" style={{ height: `${num}` }}>
-                                <h2 className='pro-text'>The Golden <br /> Bakery</h2>
+                                <h2 className='pro-text'>The Golden Bakery</h2>
                             </div>
                         </a>
                     </div>
@@ -94,7 +83,6 @@ const Project = () => {
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/MyTube/">
                             <img src={tube} className='project-cover' alt="" />
-                            <img src={tube1} className='project-cover1' alt="" />
                             <div className="project-name" style={{ height: `${num}` }}>
                                 <h2 className='pro-text'>MyTube</h2>
                             </div>
@@ -103,16 +91,14 @@ const Project = () => {
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/WindowsUniversalTools/">
                             <img src={win} className='project-cover' alt="" />
-                            <img src={win1} className='project-cover1' alt="" />
                             <div className="project-name" style={{ height: `${num}` }}>
-                                <h2 className='pro-text'>Windows <br />Universal Tools</h2>
+                                <h2 className='pro-text'>WindowsUniversalTools</h2>
                             </div>
                         </a>
                     </div>
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/movies/">
                             <img src={movie} className='project-cover' alt="" />
-                            <img src={movie1} className='project-cover1' alt="" />
                             <div className="project-name" style={{ height: `${num}` }}>
                                 <h2 className='pro-text'>Movie</h2>
                             </div>
@@ -123,7 +109,6 @@ const Project = () => {
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/EStore/">
                             <img src={ecom} className='project-cover' alt="" />
-                            <img src={ecom1} className='project-cover1' alt="" />
                             <div className="project-name" style={{ height: `${num}` }}>
                                 <h2 className='pro-text'>E-Commerce</h2>
                             </div>
@@ -133,7 +118,6 @@ const Project = () => {
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
                         <a target="_blank" href="https://ajayanandrao.github.io/my-todo/">
                             <img src={todo} className='project-cover' alt="" />
-                            <img src={todo1} className='project-cover1' alt="" />
                             <div className="project-name" style={{ height: `${num}` }}>
                                 <h2 className='pro-text'>ToDo</h2>
                             </div>
