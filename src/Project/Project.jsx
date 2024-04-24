@@ -17,6 +17,7 @@ import todo1 from "./../img/todo.png"
 import ecom1 from "./../img/ecom.png";
 import tube1 from "./../img/mytube.png";
 import iphone1 from "./../img/iphone13.png";
+import dolf from "./../img/dolf.png";
 
 
 const Project = () => {
@@ -77,6 +78,15 @@ const Project = () => {
                             <div className="project-name">
                                 <h2 className='pro-text'>iPhone13</h2>
 
+                            </div>
+                        </a>
+                    </div>
+                    <div className="project-cover-div iphone" style={{ height: `${num}px` }}>
+                        <a target="_blank" href="https://ajayanandrao.github.io/dolph/">
+                            <img src={dolf} className='project-cover' style={{ objectFit: "contain" }} alt="" />
+                            <img src={dolf} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
+                            <div className="project-name">
+                                <h2 className='pro-text'>Dolph</h2>
                             </div>
                         </a>
                     </div>
