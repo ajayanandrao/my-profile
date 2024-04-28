@@ -111,7 +111,7 @@ const Project = () => {
                         </a>
                     </div>
                     <div className="project-cover-div" style={{ height: `${num}px` }}>
-                        <a target="_blank" href="https://whatsapp-a3731.web.app/">
+                        <a target="_blank" href="https://chat-3c10a.web.app/">
                             {/* <img src={tube} className='project-cover' alt="" /> */}
                             {/* <img src={tube1} className='project-cover1' alt="" /> */}
                             <div className="project-name" style={{ height: `${num}` }}>
