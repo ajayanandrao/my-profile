@@ -17,17 +17,10 @@ const Navbar = () => {
         return unsubscribe;
     }, []);
 
-    const nav = useNavigate();
-
-
-    const handleClick = () => {
-        nav("/")
-        window.location.reload();
-    };
 
     return (
         <div className='navbar-main'>
-            <div className="nav-bramd " onClick={handleClick}>
+            <div className="nav-bramd " >
                 <Link to="/" className="link nav-brand" >  My Profile </Link>
             </div>
             <div className="nav-item mx-4">
