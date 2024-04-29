@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./Navbar.scss"
 import { useEffect, useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
@@ -16,10 +16,18 @@ const Navbar = () => {
 
         return unsubscribe;
     }, []);
+
+    const nav = useNavigate();
+
+    const handleClick = () => {
+        nav("/")
+        window.location.reload();
+    };
+
     return (
         <div className='navbar-main'>
             <div className="nav-bramd ">
-                <a href="/my-profile/" className="link nav-brand">  My Profile </a>
+                <Link to="/" className="link nav-brand" onClick={handleClick}>  My Profile </Link>
             </div>
             <div className="nav-item mx-4">
                 <Link to="/about/" className="link"> About</Link>

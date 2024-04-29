@@ -44,6 +44,7 @@ code {
 #preloader:after {
   content: "";
   background-color: rgb(12, 12, 12);
+  
   position: absolute;
   inset: 0;
   width: 50%;

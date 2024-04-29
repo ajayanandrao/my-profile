@@ -13,20 +13,26 @@ const Home = () => {
 
     // lenis
 
-    const lenis = new Lenis()
-    lenis.on('scroll', (e) => {
-        console.log(e)
-    })
-    function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf);
-
-    // mouse follower
     useEffect(() => {
-        const preloader = document.querySelector('#preloader');
+        // Create an instance of Lenis for smooth scrolling
+        const lenis = new Lenis();
 
+        // Event listener for smooth scrolling
+        lenis.on('scroll', (e) => {
+            console.log(e);
+        });
+
+        // Function for requestAnimationFrame integration with Lenis
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        // Call raf function recursively
+        requestAnimationFrame(raf);
+
+        // Preloader logic
+        const preloader = document.querySelector('#preloader');
         if (preloader) {
             window.addEventListener('load', () => {
                 setTimeout(() => {
@@ -37,17 +43,20 @@ const Home = () => {
                 }, 2000);
             });
         }
+
+        // Cleanup function
+        return () => {
+            lenis.destroy(); // Destroy the Lenis instance to prevent memory leaks
+            window.removeEventListener('load', () => { }); // Remove the load event listener
+        };
     }, []);
-
-
-
 
     return (
         <>
 
             <div className='home-two'>
                 <div id="preloader">
-                    <div class="line"></div>
+                    <div className="line"></div>
                 </div>
                 <SectionOne />
                 <SectionTwo />
