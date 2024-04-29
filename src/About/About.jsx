@@ -58,8 +58,10 @@ const About = () => {
         };
     }, []);
 
+
     return (
         <div className='about-container'>
+
             <motion.div
                 animate={{
                     x: mousePosition.x - 100 / 2, // Adjust according to the size of your circle

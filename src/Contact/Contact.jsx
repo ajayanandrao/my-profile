@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { addDoc, collection, onSnapshot, serverTimestamp } from 'firebase/firestore';
 import { db } from '../Firebase';
 import Canvas from '../Canvas/Canvas';
+import "./../index.css"
 
 
 const Contact = () => {
@@ -69,6 +70,7 @@ const Contact = () => {
 
     return (
         <>
+
             <motion.div
                 animate={{
                     x: mousePosition.x - 100 / 2, // Adjust according to the size of your circle
@@ -90,6 +92,7 @@ const Contact = () => {
                 </motion.div>
             }
             <div className="Contact-div-wrapper">
+
                 <div className='tile-div'><h1 className='title'>GET IN TOUCH</h1></div>
                 {/* https://ajayanandrao.github.io/VChat/qHIcUV2VcxQ11kasusyE5kFZ1713 */}
                 <div className="contact-div-contact">

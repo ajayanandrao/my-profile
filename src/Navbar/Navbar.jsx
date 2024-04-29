@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <div className='navbar-main'>
             <div className="nav-bramd ">
-                <Link to="/" className="link nav-brand">  My Profile </Link>
+                <a href="/my-profile/" className="link nav-brand">  My Profile </a>
             </div>
             <div className="nav-item mx-4">
                 <Link to="/about/" className="link"> About</Link>

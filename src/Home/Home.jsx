@@ -24,13 +24,31 @@ const Home = () => {
     requestAnimationFrame(raf);
 
     // mouse follower
+    useEffect(() => {
+        const preloader = document.querySelector('#preloader');
 
-    
+        if (preloader) {
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    preloader.classList.add('loaded');
+                }, 1000);
+                setTimeout(() => {
+                    preloader.remove();
+                }, 2000);
+            });
+        }
+    }, []);
+
+
+
 
     return (
         <>
-            <div className='home-two'>
 
+            <div className='home-two'>
+                <div id="preloader">
+                    <div class="line"></div>
+                </div>
                 <SectionOne />
                 <SectionTwo />
                 <Project />
