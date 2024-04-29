@@ -21,6 +21,7 @@ import { IoClose } from "react-icons/io5";
 import { RiReactjsLine } from "react-icons/ri";
 import cv from './React.pdf';
 import Canvas from '../Canvas/Canvas';
+import { useSelector } from 'react-redux';
 
 const About = () => {
 

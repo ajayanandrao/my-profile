@@ -8,6 +8,7 @@ import { addDoc, collection, onSnapshot, serverTimestamp } from 'firebase/firest
 import { db } from '../Firebase';
 import Canvas from '../Canvas/Canvas';
 import "./../index.css"
+import { useSelector } from 'react-redux';
 
 
 const Contact = () => {

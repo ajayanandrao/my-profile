@@ -19,6 +19,7 @@ const Navbar = () => {
 
     const nav = useNavigate();
 
+
     const handleClick = () => {
         nav("/")
         window.location.reload();
@@ -26,12 +27,14 @@ const Navbar = () => {
 
     return (
         <div className='navbar-main'>
-            <div className="nav-bramd ">
-                <Link to="/" className="link nav-brand" onClick={handleClick}>  My Profile </Link>
+            <div className="nav-bramd " onClick={handleClick}>
+                <Link to="/" className="link nav-brand" >  My Profile </Link>
             </div>
             <div className="nav-item mx-4">
                 <Link to="/about/" className="link"> About</Link>
-                <div className="line"></div></div>
+                <div className="line"></div>
+            </div>
+
             <div className="nav-item">
                 <Link to="/contact/" className="link"> Contact</Link>
                 <div className="line"></div>

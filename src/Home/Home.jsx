@@ -8,10 +8,13 @@ import Project from '../Project/Project';
 import Lenis from '@studio-freight/lenis';
 
 import { motion } from "framer-motion"
+import { useSelector } from 'react-redux';
 
 const Home = () => {
 
     // lenis
+
+    const load = useSelector(state => state.canva.loading)
 
     useEffect(() => {
         // Create an instance of Lenis for smooth scrolling
@@ -49,7 +52,8 @@ const Home = () => {
             lenis.destroy(); // Destroy the Lenis instance to prevent memory leaks
             window.removeEventListener('load', () => { }); // Remove the load event listener
         };
-    }, []);
+    }, [load]);
+
 
     return (
         <>

@@ -4,7 +4,8 @@ export const CanvasSlice = createSlice({
     name: "canvas",
     initialState: {
         canvasWidth: 0,
-        canvasHeight: 0
+        canvasHeight: 0,
+        loading: 0
     },
     reducers: {
         canvasW: (state, action) => {
@@ -12,10 +13,13 @@ export const CanvasSlice = createSlice({
         },
         canvasH: (state, action) => {
             state.canvasHeight = action.payload;
+        },
+        load: (state, action) => {
+            state.loading = action.payload;
         }
     }
 });
 
-export const { canvasW, canvasH } = CanvasSlice.actions;
+export const { canvasW, canvasH, load } = CanvasSlice.actions;
 
 export default CanvasSlice.reducer;
