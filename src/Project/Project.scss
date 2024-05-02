@@ -6,7 +6,6 @@
     padding: 1rem;
     padding-bottom: 50px;
 
-
     .pro-title {
         width: 100%;
         display: flex;
@@ -94,6 +93,8 @@
             transition: 0.5s ease-in-out;
             scale: 0.8;
 
+
+
             @include respond-to(sm) {
                 scale: 1;
                 aspect-ratio: 3/1.6;
@@ -108,7 +109,7 @@
                 aspect-ratio: 6.5/3;
                 position: sticky;
                 top: 180px;
-                
+
             }
 
             &:hover {
@@ -152,6 +153,7 @@
                     width: 100%;
                     height: 100%;
                 }
+
                 @include respond-to(sm) {
                     width: 100%;
                     height: 100%;
@@ -175,6 +177,7 @@
                     height: 100%;
                     display: flex;
                 }
+
                 @include respond-to(xs) {
                     width: 100%;
                     height: 100%;
@@ -197,6 +200,7 @@
                 @include respond-to(md) {
                     display: none;
                 }
+
                 @include respond-to(sm) {
                     display: none;
                 }
