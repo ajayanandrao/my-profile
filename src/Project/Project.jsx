@@ -63,7 +63,7 @@ const Project = () => {
             <div className="pro-grid-center">
                 <div className="project-wrapper">
 
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/VChat/">
                             <img src={vchat} className='project-cover' style={{ objectFit: "contain" }} alt="" />
                             <img src={vchat1} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
@@ -72,7 +72,7 @@ const Project = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="project-cover-div iphone" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div iphone">
                         <a target="_blank" href="https://revuelto.netlify.app//">
                             <img src={lambra} className='project-cover' style={{ objectFit: "contain" }} alt="" />
                             <img src={lambra} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
@@ -82,7 +82,7 @@ const Project = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="project-cover-div iphone" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div iphone">
                         <a target="_blank" href="https://ajayanandrao.github.io/dolph/">
                             <img src={dolf} className='project-cover' style={{ objectFit: "contain" }} alt="" />
                             <img src={dolf} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
@@ -92,7 +92,7 @@ const Project = () => {
                         </a>
                     </div>
 
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/Golden/">
                             <img src={golden} className='project-cover' alt="" />
                             <img src={golden1} className='project-cover1' alt="" />
@@ -102,7 +102,7 @@ const Project = () => {
                         </a>
                     </div>
 
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/MyTube/">
                             <img src={tube} className='project-cover' alt="" />
                             <img src={tube1} className='project-cover1' alt="" />
@@ -111,7 +111,7 @@ const Project = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://chat-3c10a.web.app/">
                             {/* <img src={tube} className='project-cover' alt="" /> */}
                             {/* <img src={tube1} className='project-cover1' alt="" /> */}
@@ -120,7 +120,7 @@ const Project = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/WindowsUniversalTools/">
                             <img src={win} className='project-cover' alt="" />
                             <img src={win1} className='project-cover1' alt="" />
@@ -129,7 +129,7 @@ const Project = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/movies/">
                             <img src={movie} className='project-cover' alt="" />
                             <img src={movie1} className='project-cover1' alt="" />
@@ -140,7 +140,7 @@ const Project = () => {
                     </div>
 
 
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/EStore/">
                             <img src={ecom} className='project-cover' alt="" />
                             <img src={ecom1} className='project-cover1' alt="" />
@@ -150,7 +150,7 @@ const Project = () => {
                         </a>
                     </div>
 
-                    <div className="project-cover-div" style={{ height: `${num}px` }}>
+                    <div className="project-cover-div">
                         <a target="_blank" href="https://ajayanandrao.github.io/my-todo/">
                             <img src={todo} className='project-cover' alt="" />
                             <img src={todo1} className='project-cover1' alt="" />

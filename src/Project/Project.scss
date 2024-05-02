@@ -91,9 +91,10 @@
             // background: black;
             border-radius: 10px;
             transition: 0.5s ease-in-out;
-            scale: 0.8;
-
-
+            scale: 0.7;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
 
             @include respond-to(sm) {
                 scale: 1;
@@ -114,7 +115,7 @@
 
             &:hover {
                 border: 1px solid rgb(94, 94, 94);
-                scale: 0.7;
+                scale: 0.8;
 
                 @include respond-to(sm) {
                     scale: 1;
@@ -127,8 +128,9 @@
                 }
 
                 .project-cover {
-                    width: 100%;
-                    height: 100%;
+                    width: 400px;
+                    height: 400px;
+                    opacity: 1;
                 }
 
                 .project-name {
@@ -141,13 +143,14 @@
             .project-cover {
                 width: 0%;
                 height: 0%;
+                opacity: 0;
                 object-fit: cover;
                 position: absolute;
                 transition: 0.6s ease-in-out;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background: black;
+                // background: red;
 
                 @include respond-to(md) {
                     width: 100%;
@@ -170,17 +173,22 @@
             .project-cover1 {
                 object-fit: cover;
                 position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 display: none;
+                object-fit: cover;
+                object-position: center;
 
                 @include respond-to(sm) {
-                    width: 100%;
-                    height: 100%;
+                    width: 400px;
+                    height: 400px;
                     display: flex;
                 }
 
                 @include respond-to(xs) {
-                    width: 100%;
-                    height: 100%;
+                    width: 400px;
+                    height: 400px;
                     display: flex;
                 }
             }
@@ -197,9 +205,6 @@
                 height: 100%;
                 color: white;
 
-                @include respond-to(md) {
-                    display: none;
-                }
 
                 @include respond-to(sm) {
                     display: none;
