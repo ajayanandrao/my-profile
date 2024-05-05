@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.ffae8447.css",
-    "main.js": "/my-profile/static/js/main.1da61950.js",
+    "main.css": "/my-profile/static/css/main.4274949d.css",
+    "main.js": "/my-profile/static/js/main.e00e9078.js",
     "static/js/206.8a46e06e.chunk.js": "/my-profile/static/js/206.8a46e06e.chunk.js",
     "static/media/lambro.png": "/my-profile/static/media/lambro.89f4ed896242b0ea6b51.png",
     "static/media/mytube.png": "/my-profile/static/media/mytube.8240a07b42955ce145ff.png",
@@ -29,7 +29,7 @@
     "index.html": "/my-profile/index.html"
   },
   "entrypoints": [
-    "static/css/main.ffae8447.css",
-    "static/js/main.1da61950.js"
+    "static/css/main.4274949d.css",
+    "static/js/main.e00e9078.js"
   ]
 }
