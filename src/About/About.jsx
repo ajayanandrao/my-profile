@@ -176,8 +176,8 @@ const About = () => {
                                 <div>REACT</div>
                                 <div>100%</div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style={{ width: `${h ? 100 : h}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress">
+                                <div className="progress-bar" role="progressbar" style={{ width: `${h ? 100 : h}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -186,8 +186,8 @@ const About = () => {
                                 <div>FIREBASE</div>
                                 <div>90%</div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style={{ width: `${n ? 90 : n}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress">
+                                <div className="progress-bar" role="progressbar" style={{ width: `${n ? 90 : n}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -197,8 +197,8 @@ const About = () => {
                                 <div>REACT NATIVE</div>
                                 <div>80%</div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style={{ width: `${e ? 80 : e}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress">
+                                <div className="progress-bar" role="progressbar" style={{ width: `${e ? 80 : e}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -207,8 +207,8 @@ const About = () => {
                                 <div>JAVASCRIPT</div>
                                 <div>90%</div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style={{ width: `${n ? 90 : n}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress">
+                                <div className="progress-bar" role="progressbar" style={{ width: `${n ? 90 : n}%` }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div className='d-flex'>
