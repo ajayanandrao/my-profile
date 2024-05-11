@@ -64,7 +64,7 @@ const Project = () => {
                 <div className="project-wrapper">
 
                     <div className="project-cover-div">
-                        <a target="_blank" href="https://ajayanandrao.github.io/VChat/">
+                        <a target="_blank" href="https://vchatweb.netlify.app/">
                             <img src={vchat} className='project-cover' style={{ objectFit: "contain" }} alt="" />
                             <img src={vchat1} className='project-cover1' style={{ objectFit: "contain" }} alt="" />
                             <div className="project-name">
